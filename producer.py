@@ -14,16 +14,16 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
 
-TOPIC = "crimes_mongo"
+TOPIC = "Mongo"
 
 JSONL_URL = "https://raw.githubusercontent.com/IngEnigma/StreamlitSpark/refs/heads/master/results/crimes_by_area/data.jsonl"
 
 producer_conf = {
-    'bootstrap.servers': 'cvq4abs3mareak309q80.any.us-west-2.mpx.prd.cloud.redpanda.com:9092',
+    'bootstrap.servers': 'd03jborb92dfgde46vd0.any.us-west-2.mpx.prd.cloud.redpanda.com:9092',
     'security.protocol': 'SASL_SSL',
     'sasl.mechanism': 'SCRAM-SHA-256',
-    'sasl.username': 'IngEnigma',
-    'sasl.password': 'BrARBOxX98VI4f2LIuIT1911NYGrXu'
+    'sasl.username': 'SoyEtoor',
+    'sasl.password': '040901'
 }
 
 producer = Producer(producer_conf)
